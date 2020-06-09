@@ -12,6 +12,14 @@
         <module>hadoop</module>
         <module>sqoop</module>
         <module>hive</module>
+        <module>kafka</module>
+        <module>zookeeper</module>
+        <module>flink</module>
+        <module>spark</module>
+        <module>hbase</module>
+        <module>clickhouse</module>
+        <module>azkaban</module>
+        <module>presto</module>
     </modules>
 
 
