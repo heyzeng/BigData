@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17b37d1b-7f48-4dc3-b65c-2cb6ea66ea89" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/0/80ab965d0cf172298fca7d8ccfd31d0ba346c46d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/0/80ab965d0cf172298fca7d8ccfd31d0ba346c46d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop/src/main/java/com/wordcount/wordCountDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop/src/main/java/com/wordcount/wordCountMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop/src/main/java/com/wordcount/wordCountReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop/src/main/resources/word" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop/target/classes/some.class" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/target/classes/some.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +50,15 @@
     <option name="height" value="788" />
   </component>
   <component name="ProjectId" id="1cGAo1QwlSBlfyQJ7H9IXeNnULf" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -61,14 +72,14 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/hive/src/main/java" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.dd">
+  <component name="RunManager" selected="Application.wordCountDriver">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -87,6 +98,20 @@
       <option name="MAIN_CLASS_NAME" value="some" />
       <module name="hadoop" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wordCountDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wordcount.wordCountDriver" />
+      <module name="hadoop" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wordcount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,9 +137,11 @@
     <list>
       <item itemvalue="Application.some" />
       <item itemvalue="Application.dd" />
+      <item itemvalue="Application.wordCountDriver" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.wordCountDriver" />
         <item itemvalue="Application.dd" />
         <item itemvalue="Application.some" />
       </list>
@@ -144,17 +171,44 @@
       <workItem from="1590333178648" duration="4000" />
       <workItem from="1590627682752" duration="144000" />
       <workItem from="1591080458841" duration="23000" />
+      <workItem from="1591683564697" duration="848000" />
+      <workItem from="1601343167011" duration="1057000" />
+      <workItem from="1601344600383" duration="1154000" />
+      <workItem from="1601345798998" duration="4093000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="134" y="23" key="SettingsEditor" timestamp="1590144757701">
-      <screen x="0" y="23" width="1440" height="795" />
+    <state width="1383" height="231" key="GridCell.Tab.0.bottom" timestamp="1601350426558">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="134" y="23" key="SettingsEditor/0.23.1440.795/1440.23.1920.1057@0.23.1440.795" timestamp="1590144757701" />
+    <state width="1383" height="231" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1601350426558" />
+    <state width="1383" height="231" key="GridCell.Tab.0.center" timestamp="1601350426557">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1383" height="231" key="GridCell.Tab.0.center/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1601350426557" />
+    <state width="1383" height="231" key="GridCell.Tab.0.left" timestamp="1601350426556">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1383" height="231" key="GridCell.Tab.0.left/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1601350426556" />
+    <state width="1383" height="231" key="GridCell.Tab.0.right" timestamp="1601350426558">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1383" height="231" key="GridCell.Tab.0.right/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1601350426558" />
+    <state x="178" y="94" width="1155" height="806" key="Maven.ArtifactSearchDialog" timestamp="1601346110111">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="178" y="94" width="1155" height="806" key="Maven.ArtifactSearchDialog/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1601346110111" />
+    <state x="134" y="1" key="SettingsEditor" timestamp="1601344622419">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="134" y="1" key="SettingsEditor/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1601344622419" />
   </component>
   <component name="masterDetails">
     <states>
