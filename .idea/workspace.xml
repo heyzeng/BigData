@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17b37d1b-7f48-4dc3-b65c-2cb6ea66ea89" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/hadoop/src/main/java/com/wordcount/wordCountDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop/src/main/java/com/wordcount/wordCountMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop/src/main/java/com/wordcount/wordCountReducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hadoop/src/main/resources/word" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hadoop/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hadoop/target/classes/some.class" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/target/classes/some.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +164,7 @@
       <workItem from="1591683564697" duration="848000" />
       <workItem from="1601343167011" duration="1057000" />
       <workItem from="1601344600383" duration="1154000" />
-      <workItem from="1601345798998" duration="4093000" />
+      <workItem from="1601345798998" duration="4606000" />
     </task>
     <servers />
   </component>
@@ -185,22 +175,22 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1383" height="231" key="GridCell.Tab.0.bottom" timestamp="1601350426558">
+    <state width="1383" height="231" key="GridCell.Tab.0.bottom" timestamp="1601360869852">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1383" height="231" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1601350426558" />
-    <state width="1383" height="231" key="GridCell.Tab.0.center" timestamp="1601350426557">
+    <state width="1383" height="231" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1601360869852" />
+    <state width="1383" height="231" key="GridCell.Tab.0.center" timestamp="1601360869850">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1383" height="231" key="GridCell.Tab.0.center/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1601350426557" />
-    <state width="1383" height="231" key="GridCell.Tab.0.left" timestamp="1601350426556">
+    <state width="1383" height="231" key="GridCell.Tab.0.center/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1601360869850" />
+    <state width="1383" height="231" key="GridCell.Tab.0.left" timestamp="1601360869849">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1383" height="231" key="GridCell.Tab.0.left/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1601350426556" />
-    <state width="1383" height="231" key="GridCell.Tab.0.right" timestamp="1601350426558">
+    <state width="1383" height="231" key="GridCell.Tab.0.left/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1601360869849" />
+    <state width="1383" height="231" key="GridCell.Tab.0.right" timestamp="1601360869851">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1383" height="231" key="GridCell.Tab.0.right/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1601350426558" />
+    <state width="1383" height="231" key="GridCell.Tab.0.right/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1601360869851" />
     <state x="178" y="94" width="1155" height="806" key="Maven.ArtifactSearchDialog" timestamp="1601346110111">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
