@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17b37d1b-7f48-4dc3-b65c-2cb6ea66ea89" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/flink/src/main/java/OnOfflineDevive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink/src/main/java/com/wordcount/Flink01_WC_Batch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flink/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,12 +37,6 @@
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="231" />
-    <option name="y" value="325" />
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
   </component>
   <component name="ProjectId" id="1cGAo1QwlSBlfyQJ7H9IXeNnULf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -69,7 +68,29 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.wordCountDriver">
+  <component name="RunManager" selected="Application.Flink01_WC_Batch">
+    <configuration name="Flink01_WC_Batch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wordcount.Flink01_WC_Batch" />
+      <module name="flink" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wordcount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OnOfflineDevive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OnOfflineDevive" />
+      <module name="flink" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -128,9 +149,13 @@
       <item itemvalue="Application.some" />
       <item itemvalue="Application.dd" />
       <item itemvalue="Application.wordCountDriver" />
+      <item itemvalue="Application.OnOfflineDevive" />
+      <item itemvalue="Application.Flink01_WC_Batch" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Flink01_WC_Batch" />
+        <item itemvalue="Application.OnOfflineDevive" />
         <item itemvalue="Application.wordCountDriver" />
         <item itemvalue="Application.dd" />
         <item itemvalue="Application.some" />
@@ -168,6 +193,12 @@
       <workItem from="1601362089618" duration="276000" />
       <workItem from="1601786951820" duration="344000" />
       <workItem from="1603329860654" duration="550000" />
+      <workItem from="1606098092439" duration="426000" />
+      <workItem from="1606116232135" duration="712000" />
+      <workItem from="1606128844205" duration="83000" />
+      <workItem from="1606128944602" duration="1000" />
+      <workItem from="1606204664870" duration="1915000" />
+      <workItem from="1606700167068" duration="3759000" />
     </task>
     <servers />
   </component>
@@ -178,22 +209,26 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1383" height="231" key="GridCell.Tab.0.bottom" timestamp="1601362442014">
+    <state x="258" y="236" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606098272653">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1383" height="231" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1601362442014" />
-    <state width="1383" height="231" key="GridCell.Tab.0.center" timestamp="1601362442012">
+    <state x="258" y="236" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606098272653" />
+    <state width="1383" height="329" key="GridCell.Tab.0.bottom" timestamp="1606708358338">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1383" height="231" key="GridCell.Tab.0.center/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1601362442012" />
-    <state width="1383" height="231" key="GridCell.Tab.0.left" timestamp="1601362442011">
+    <state width="1383" height="329" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606708358338" />
+    <state width="1383" height="329" key="GridCell.Tab.0.center" timestamp="1606708358336">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1383" height="231" key="GridCell.Tab.0.left/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1601362442011" />
-    <state width="1383" height="231" key="GridCell.Tab.0.right" timestamp="1601362442013">
+    <state width="1383" height="329" key="GridCell.Tab.0.center/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606708358336" />
+    <state width="1383" height="329" key="GridCell.Tab.0.left" timestamp="1606708358333">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1383" height="231" key="GridCell.Tab.0.right/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1601362442013" />
+    <state width="1383" height="329" key="GridCell.Tab.0.left/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606708358333" />
+    <state width="1383" height="329" key="GridCell.Tab.0.right" timestamp="1606708358337">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1383" height="329" key="GridCell.Tab.0.right/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606708358337" />
     <state x="178" y="94" width="1155" height="806" key="Maven.ArtifactSearchDialog" timestamp="1601346110111">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
