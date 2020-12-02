@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17b37d1b-7f48-4dc3-b65c-2cb6ea66ea89" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/flink/src/main/java/OnOfflineDevive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink/src/main/java/com/wordcount/Flink01_WC_Batch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink/src/main/java/readFormatParquet.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink/src/main/resources/log4j-error.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark/src/main/java/com/wordcount/WordCount.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flink/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flink/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +58,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -198,7 +201,8 @@
       <workItem from="1606128844205" duration="83000" />
       <workItem from="1606128944602" duration="1000" />
       <workItem from="1606204664870" duration="1915000" />
-      <workItem from="1606700167068" duration="3759000" />
+      <workItem from="1606700167068" duration="4230000" />
+      <workItem from="1606873487116" duration="5036000" />
     </task>
     <servers />
   </component>
@@ -209,26 +213,38 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="80" y="0" key="#Project_Structure" timestamp="1606876051112">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="80" y="0" key="#Project_Structure/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606876051112" />
     <state x="258" y="236" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606098272653">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="258" y="236" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606098272653" />
-    <state width="1383" height="329" key="GridCell.Tab.0.bottom" timestamp="1606708358338">
+    <state x="217" y="48" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1606880777267">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1383" height="329" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606708358338" />
-    <state width="1383" height="329" key="GridCell.Tab.0.center" timestamp="1606708358336">
+    <state x="217" y="48" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606880777267" />
+    <state width="1383" height="329" key="GridCell.Tab.0.bottom" timestamp="1606716792674">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1383" height="329" key="GridCell.Tab.0.center/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606708358336" />
-    <state width="1383" height="329" key="GridCell.Tab.0.left" timestamp="1606708358333">
+    <state width="1383" height="329" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606712284881" />
+    <state width="1383" height="329" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-995.1080.1895@0.0.1440.900" timestamp="1606716792674" />
+    <state width="1383" height="329" key="GridCell.Tab.0.center" timestamp="1606716792516">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1383" height="329" key="GridCell.Tab.0.left/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606708358333" />
-    <state width="1383" height="329" key="GridCell.Tab.0.right" timestamp="1606708358337">
+    <state width="1383" height="329" key="GridCell.Tab.0.center/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606712284880" />
+    <state width="1383" height="329" key="GridCell.Tab.0.center/0.0.1440.900/1440.-995.1080.1895@0.0.1440.900" timestamp="1606716792516" />
+    <state width="1383" height="329" key="GridCell.Tab.0.left" timestamp="1606716792442">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1383" height="329" key="GridCell.Tab.0.right/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606708358337" />
+    <state width="1383" height="329" key="GridCell.Tab.0.left/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606712284878" />
+    <state width="1383" height="329" key="GridCell.Tab.0.left/0.0.1440.900/1440.-995.1080.1895@0.0.1440.900" timestamp="1606716792442" />
+    <state width="1383" height="329" key="GridCell.Tab.0.right" timestamp="1606716792610">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1383" height="329" key="GridCell.Tab.0.right/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606712284880" />
+    <state width="1383" height="329" key="GridCell.Tab.0.right/0.0.1440.900/1440.-995.1080.1895@0.0.1440.900" timestamp="1606716792610" />
     <state x="178" y="94" width="1155" height="806" key="Maven.ArtifactSearchDialog" timestamp="1601346110111">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -237,56 +253,5 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="134" y="1" key="SettingsEditor/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1601344622419" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>scala-sdk-2.11.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
