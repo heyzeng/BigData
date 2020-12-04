@@ -1,30 +1,32 @@
-import java.util.logging.{Level, Logger}
+package com.work
 
+import org.apache.flink.api.java.ExecutionEnvironment
 import org.apache.flink.core.fs.Path
 import org.apache.flink.formats.parquet.ParquetRowInputFormat
-import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment
-import org.apache.hadoop.conf.Configuration
-import org.apache.parquet.schema.{MessageType, PrimitiveType}
+import org.apache.log4j.{Level, Logger}
 import org.apache.parquet.schema.PrimitiveType.PrimitiveTypeName
 import org.apache.parquet.schema.Type.Repetition
+import org.apache.parquet.schema.{MessageType, PrimitiveType}
 
 /**
  * Author:Jude
  * Date:2020-12-02 上午10:20
  */
-object readFormatParquet {
+object readFormatParquetHdfs {
   def main(args: Array[String]): Unit = {
 
     Logger.getLogger("org.apache.flink").setLevel(Level.ERROR)
-    val env = StreamExecutionEnvironment.getExecutionEnvironment
-    val parquetFile = "/FF"
+    val env = ExecutionEnvironment.getExecutionEnvironment
+    env.setParallelism(1)
+    val topicResourceStreamFile = "/Users/judezeng/Downloads/000000_9"
+    val iotDeviceFile = "/Users/judezeng/Downloads/part-m-00000"
 
     /**
      * 指定schema信息
      */
     val device_id = new PrimitiveType(Repetition.OPTIONAL, PrimitiveTypeName.BINARY, "device_id")
     val resource_id = new PrimitiveType(Repetition.OPTIONAL, PrimitiveTypeName.BINARY, "resource_id")
-    val value = new PrimitiveType(Repetition.OPTIONAL, PrimitiveTypeName.INT64, "value")
+    val value = new PrimitiveType(Repetition.OPTIONAL, PrimitiveTypeName.INT32, "value")
     val source = new PrimitiveType(Repetition.OPTIONAL, PrimitiveTypeName.BINARY, "source")
     val s1 = new PrimitiveType(Repetition.OPTIONAL, PrimitiveTypeName.BINARY, "s1")
     val s2 = new PrimitiveType(Repetition.OPTIONAL, PrimitiveTypeName.BINARY, "s2")
@@ -40,20 +42,36 @@ object readFormatParquet {
     val topResourceStreamSchema = new MessageType("t1", device_id, resource_id, value,source,s1,s2,s3,s4,s5,s6,s7,heard_beat,user_id,data_time)
     print(s"topResourceStreamSchema : ${topResourceStreamSchema}")
 
-    val t1 = env.readFile(new ParquetRowInputFormat(new Path(parquetFile),topResourceStreamSchema),parquetFile)
+    val t1 = env
+      .readFile(new ParquetRowInputFormat(new Path(topicResourceStreamFile), topResourceStreamSchema), topicResourceStreamFile)
+//      .flatMap(new FlatMapFunction[String, BaseBean] {
+//
+//      })
+//      .map(s => f2(s))
 
-    t1.map(_.getField(14)).print().setParallelism(1)
+    t1.print()
+
+
+
+
 
     /**
      * get file schema
      */
+    val t2 = env.readTextFile(iotDeviceFile)
+//    t2.print()
+
+//   t1.union(t2)
 
 //    val conf = new Configuration(true)
 
-
-
-
-
-
+    env.execute("readFormatParquet")
   }
+
+//  def f2(x:Row):BaseBean ={
+//    val baseBean: ResourceBean = new ResourceBean();
+//    baseBean.value = x.getField(2).toString.toInt
+//    baseBean.timestamp = x.getField(13).toString.toLong
+//    baseBean
+//  }
 }

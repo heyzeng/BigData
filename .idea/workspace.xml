@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17b37d1b-7f48-4dc3-b65c-2cb6ea66ea89" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/flink/src/main/java/readFormatParquet.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink/src/main/resources/log4j-error.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark/src/main/java/com/wordcount/WordCount.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink/src/main/java/com/work/bean/Record.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink/src/main/java/com/work/readFormatParquet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flink/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flink/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/OnOfflineDevive.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/work/OnOfflineDevive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/readFormatParquet.scala" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/work/readFormatParquetHdfs.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Scala Object" />
         <option value="Class" />
       </list>
     </option>
@@ -71,7 +70,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Flink01_WC_Batch">
+  <component name="RunManager" selected="Application.readFormatParquet">
     <configuration name="Flink01_WC_Batch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wordcount.Flink01_WC_Batch" />
       <module name="flink" />
@@ -87,7 +86,7 @@
       </method>
     </configuration>
     <configuration name="OnOfflineDevive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OnOfflineDevive" />
+      <option name="MAIN_CLASS_NAME" value="com.work.OnOfflineDevive" />
       <module name="flink" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -108,9 +107,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="some" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="some" />
-      <module name="hadoop" />
+    <configuration name="readFormatParquet" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.work.readFormatParquet" />
+      <module name="flink" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,19 +148,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.some" />
       <item itemvalue="Application.dd" />
       <item itemvalue="Application.wordCountDriver" />
       <item itemvalue="Application.OnOfflineDevive" />
       <item itemvalue="Application.Flink01_WC_Batch" />
+      <item itemvalue="Application.readFormatParquet" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.readFormatParquet" />
         <item itemvalue="Application.Flink01_WC_Batch" />
         <item itemvalue="Application.OnOfflineDevive" />
         <item itemvalue="Application.wordCountDriver" />
         <item itemvalue="Application.dd" />
-        <item itemvalue="Application.some" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +201,9 @@
       <workItem from="1606128944602" duration="1000" />
       <workItem from="1606204664870" duration="1915000" />
       <workItem from="1606700167068" duration="4230000" />
-      <workItem from="1606873487116" duration="5036000" />
+      <workItem from="1606873487116" duration="24274000" />
+      <workItem from="1606964258854" duration="21067000" />
+      <workItem from="1607049408364" duration="11719000" />
     </task>
     <servers />
   </component>
@@ -221,37 +222,92 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="258" y="236" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606098272653" />
+    <state x="479" y="76" key="#com.intellij.ide.util.MemberChooser" timestamp="1606976823828">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="479" y="76" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606976823828" />
+    <state x="479" y="76" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.-995.1080.1895@0.0.1440.900" timestamp="1606961791002" />
     <state x="217" y="48" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1606880777267">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="217" y="48" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606880777267" />
-    <state width="1383" height="329" key="GridCell.Tab.0.bottom" timestamp="1606716792674">
+    <state x="85" y="362" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1606912850367">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1383" height="329" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606712284881" />
-    <state width="1383" height="329" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-995.1080.1895@0.0.1440.900" timestamp="1606716792674" />
-    <state width="1383" height="329" key="GridCell.Tab.0.center" timestamp="1606716792516">
+    <state x="85" y="362" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606912850367" />
+    <state x="224" y="25" width="991" height="807" key="#readFormatParquet" timestamp="1606904258711">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1383" height="329" key="GridCell.Tab.0.center/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606712284880" />
-    <state width="1383" height="329" key="GridCell.Tab.0.center/0.0.1440.900/1440.-995.1080.1895@0.0.1440.900" timestamp="1606716792516" />
-    <state width="1383" height="329" key="GridCell.Tab.0.left" timestamp="1606716792442">
+    <state x="224" y="25" width="991" height="807" key="#readFormatParquet/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606904258711" />
+    <state x="423" y="85" key="#xdebugger.evaluate" timestamp="1606994038812">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1383" height="329" key="GridCell.Tab.0.left/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606712284878" />
-    <state width="1383" height="329" key="GridCell.Tab.0.left/0.0.1440.900/1440.-995.1080.1895@0.0.1440.900" timestamp="1606716792442" />
-    <state width="1383" height="329" key="GridCell.Tab.0.right" timestamp="1606716792610">
+    <state x="423" y="85" key="#xdebugger.evaluate/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606994038812" />
+    <state x="152" y="0" key="CommitChangelistDialog2" timestamp="1606901747799">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1383" height="329" key="GridCell.Tab.0.right/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606712284880" />
-    <state width="1383" height="329" key="GridCell.Tab.0.right/0.0.1440.900/1440.-995.1080.1895@0.0.1440.900" timestamp="1606716792610" />
+    <state x="152" y="0" key="CommitChangelistDialog2/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606901747799" />
+    <state width="1383" height="334" key="GridCell.Tab.0.bottom" timestamp="1607078202359">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1383" height="584" key="GridCell.Tab.0.bottom/0.0.1440.830/1440.-995.1080.1895@0.0.1440.830" timestamp="1606966490887" />
+    <state width="1383" height="334" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1607078202359" />
+    <state width="1383" height="288" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-995.1080.1895@0.0.1440.900" timestamp="1606964115253" />
+    <state width="1383" height="334" key="GridCell.Tab.0.center" timestamp="1607078202357">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1383" height="584" key="GridCell.Tab.0.center/0.0.1440.830/1440.-995.1080.1895@0.0.1440.830" timestamp="1606966490886" />
+    <state width="1383" height="334" key="GridCell.Tab.0.center/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1607078202357" />
+    <state width="1383" height="288" key="GridCell.Tab.0.center/0.0.1440.900/1440.-995.1080.1895@0.0.1440.900" timestamp="1606964115251" />
+    <state width="1383" height="334" key="GridCell.Tab.0.left" timestamp="1607078202355">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1383" height="584" key="GridCell.Tab.0.left/0.0.1440.830/1440.-995.1080.1895@0.0.1440.830" timestamp="1606966490884" />
+    <state width="1383" height="334" key="GridCell.Tab.0.left/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1607078202355" />
+    <state width="1383" height="288" key="GridCell.Tab.0.left/0.0.1440.900/1440.-995.1080.1895@0.0.1440.900" timestamp="1606964115251" />
+    <state width="1383" height="334" key="GridCell.Tab.0.right" timestamp="1607078202358">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1383" height="584" key="GridCell.Tab.0.right/0.0.1440.830/1440.-995.1080.1895@0.0.1440.830" timestamp="1606966490887" />
+    <state width="1383" height="334" key="GridCell.Tab.0.right/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1607078202358" />
+    <state width="1383" height="288" key="GridCell.Tab.0.right/0.0.1440.900/1440.-995.1080.1895@0.0.1440.900" timestamp="1606964115252" />
+    <state width="1383" height="333" key="GridCell.Tab.1.bottom" timestamp="1607072837743">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1383" height="333" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1607072837743" />
+    <state width="1383" height="288" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.-995.1080.1895@0.0.1440.900" timestamp="1606964115257" />
+    <state width="1383" height="333" key="GridCell.Tab.1.center" timestamp="1607072837741">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1383" height="333" key="GridCell.Tab.1.center/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1607072837741" />
+    <state width="1383" height="288" key="GridCell.Tab.1.center/0.0.1440.900/1440.-995.1080.1895@0.0.1440.900" timestamp="1606964115254" />
+    <state width="1383" height="333" key="GridCell.Tab.1.left" timestamp="1607072837740">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1383" height="333" key="GridCell.Tab.1.left/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1607072837740" />
+    <state width="1383" height="288" key="GridCell.Tab.1.left/0.0.1440.900/1440.-995.1080.1895@0.0.1440.900" timestamp="1606964115253" />
+    <state width="1383" height="333" key="GridCell.Tab.1.right" timestamp="1607072837742">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1383" height="333" key="GridCell.Tab.1.right/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1607072837742" />
+    <state width="1383" height="288" key="GridCell.Tab.1.right/0.0.1440.900/1440.-995.1080.1895@0.0.1440.900" timestamp="1606964115256" />
     <state x="178" y="94" width="1155" height="806" key="Maven.ArtifactSearchDialog" timestamp="1601346110111">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="178" y="94" width="1155" height="806" key="Maven.ArtifactSearchDialog/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1601346110111" />
-    <state x="134" y="1" key="SettingsEditor" timestamp="1601344622419">
+    <state x="134" y="0" width="1171" height="900" key="SettingsEditor" timestamp="1606963753923">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="134" y="1" key="SettingsEditor/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1601344622419" />
+    <state x="134" y="0" width="1171" height="900" key="SettingsEditor/0.0.1440.900/1440.-995.1080.1895@0.0.1440.900" timestamp="1606963753923" />
+    <state x="301" y="207" key="run.anything.popup" timestamp="1606908439429">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="301" y="207" key="run.anything.popup/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606908439429" />
+    <state x="295" y="0" width="850" height="900" key="search.everywhere.popup" timestamp="1606961770414">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="295" y="0" width="850" height="900" key="search.everywhere.popup/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1606910990358" />
+    <state x="295" y="0" width="850" height="900" key="search.everywhere.popup/0.0.1440.900/1440.-995.1080.1895@0.0.1440.900" timestamp="1606961770414" />
   </component>
 </project>
