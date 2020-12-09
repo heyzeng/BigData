@@ -3,6 +3,7 @@ package com.work;
 import com.work.bean.Record;
 import org.apache.avro.Schema;
 import org.apache.avro.reflect.ReflectData;
+import org.apache.flink.api.common.functions.FilterFunction;
 import org.apache.flink.api.common.functions.GroupReduceFunction;
 import org.apache.flink.api.common.operators.Order;
 import org.apache.flink.api.java.DataSet;
@@ -12,8 +13,6 @@ import org.apache.flink.api.java.typeutils.PojoTypeInfo;
 import org.apache.flink.core.fs.Path;
 import org.apache.flink.formats.parquet.ParquetPojoInputFormat;
 import org.apache.flink.util.Collector;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
 import org.apache.parquet.avro.AvroSchemaConverter;
 import org.apache.parquet.schema.MessageType;
 
@@ -27,16 +26,17 @@ import java.util.HashMap;
  */
 public class readFormatParquet {
 
+    public static final String ONLINE = "1";
+    public static final String OFFLINE = "0";
+
     public static void main(String[] args) throws Exception{
 
-
-        Logger.getLogger("org.apache.flink").setLevel(Level.ERROR);
         ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
 
 
         //file path
-        String topicResourceStreamFile = "/Users/judezeng/Downloads/000023_0";
-        String iotDeviceFile = "/Users/judezeng/Downloads/part-m-00000";
+        String topicResourceStreamFile = "hdfs://10.10.20.12:8020/test/000023_0";
+        String iotDeviceFile = "hdfs://10.10.20.12:8020/test/part-m-00000";
 
 
         //read iotDevice
@@ -49,7 +49,7 @@ public class readFormatParquet {
             record.setData_time("1606752000");
             return record;
         }).returns(Record.class);
-//        iotDeviceTo.print();
+        iotDeviceTo.print();
 
 
         //read parquet
@@ -65,7 +65,12 @@ public class readFormatParquet {
 
 
         // two stream union
-        iotDeviceTo.union(topicResourceStreamTo)
+        topicResourceStream.filter(new FilterFunction<Record>() {
+            @Override
+            public boolean filter(Record value) throws Exception {
+               return value.getResource_id().equals("8.0.2045");
+            }
+        }).union(iotDeviceTo)
 //                .map(s -> {
 //                    if (s.getData_time().equals("1606752000")) {
 //                        System.out.println(s);
@@ -78,60 +83,37 @@ public class readFormatParquet {
                     @Override
                     public void reduce(Iterable<Record> values, Collector<Object> out) throws Exception {
 
-//                        ArrayList<Integer> resultList = new ArrayList<>();
-
                         int index = 0;
-                        int offlineTime = 0;
+                        long offlineTime = 0;
+                        Record last = null;
                         HashMap<String, Integer> deviceIDAndOffTime = new HashMap<>();
+
                         for (Record record : values){
-
                             index++;
-                            Record last = record;
-
-
-                            if (index == 1){
+                            if (index == 1) {
                                 last = record;
-                               if (last.getValue().equals("0")){
-                                   offlineTime = 7777;
-                                   deviceIDAndOffTime.put(record.getDevice_id(),offlineTime);
-                               }else {
-                                   break;
-                               }
                             } else {
                                 Record current = record;
-                                if (current.getValue().equals("1") && last.getValue().equals(" 0")){
-                                    offlineTime = Integer.parseInt(current.getData_time()) - Integer.parseInt(last.getData_time());
-                                    deviceIDAndOffTime.put(record.getDevice_id(),offlineTime);
-                                    current = last;
-                                } else if((current.getValue().equals("0") && last.getValue().equals("1"))
-                                        || (current.getValue().equals("0") && last.getValue().equals("0"))
-                                        ||(current.getValue().equals("1") && last.getValue().equals( "1"))){
+                                // remove repetition
+                                if (last.getValue().equals(current.getValue())) {
                                     continue;
                                 }
+                                if (last.getValue().equals(OFFLINE) && current.getValue().equals(ONLINE)) {
+                                    offlineTime += Long.parseLong(current.getData_time()) - Long.parseLong(last.getData_time());
+                                }
+                                last = current;
                             }
                         }
 
-
-//                        while (values.iterator().hasNext()){
-//
-//                            Record record = values.iterator().next();
-//                            Record record_next = values.iterator().next();
-//
-//                            offlineTime = Integer.parseInt(record_next.getData_time()) - Integer.parseInt(record.getData_time());
-//                            HashMap<String, Integer> deviceIDAndOffTime = new HashMap<>();
-//                            if (record.getValue().equals("0") && record_next.getValue().equals("1")){
-//                                if (deviceIDAndOffTime.containsKey(record.getDevice_id())){
-//                                    int Time = deviceIDAndOffTime.get(record.getDevice_id()) + offlineTime;
-//                                    deviceIDAndOffTime.put(record.getDevice_id(),Time);
-//                                }else {
-//                                    deviceIDAndOffTime.put(record.getDevice_id(),offlineTime);
-//                                }
-//                            }
-//                        }
-//                        resultList.add(offlineTime);
+                        if (index == 1) {
+                            if (last.getValue().equals(OFFLINE)) {
+                                offlineTime+=89888;
+                            }
+                        }
                         out.collect(deviceIDAndOffTime);
                     }
-                }).print();
+                });
+//                .writeAsText("/Users/judezeng/Downloads/aa.txt");
 
         //执行
 //        env.execute("readFormatParquet");

@@ -3,7 +3,6 @@ package com.work
 import org.apache.flink.api.java.ExecutionEnvironment
 import org.apache.flink.core.fs.Path
 import org.apache.flink.formats.parquet.ParquetRowInputFormat
-import org.apache.log4j.{Level, Logger}
 import org.apache.parquet.schema.PrimitiveType.PrimitiveTypeName
 import org.apache.parquet.schema.Type.Repetition
 import org.apache.parquet.schema.{MessageType, PrimitiveType}
@@ -15,11 +14,10 @@ import org.apache.parquet.schema.{MessageType, PrimitiveType}
 object readFormatParquetHdfs {
   def main(args: Array[String]): Unit = {
 
-    Logger.getLogger("org.apache.flink").setLevel(Level.ERROR)
     val env = ExecutionEnvironment.getExecutionEnvironment
     env.setParallelism(1)
-    val topicResourceStreamFile = "/Users/judezeng/Downloads/000000_9"
-    val iotDeviceFile = "/Users/judezeng/Downloads/part-m-00000"
+    val topicResourceStreamFile = "hdfs://10.10.20.12:8020/test/000023_0"
+    val iotDeviceFile = "hdfs://10.10.20.12:8020/test/part-m-00000"
 
     /**
      * 指定schema信息
