@@ -58,3 +58,5 @@ a
 -flink/src/main/java/com/work/bean/Record.java,6/0/6090870e7f5b2414834d3ae1685497a88e9b2faf
 c
 3flink/src/main/java/com/work/readFormatParquet.java,0/f/0fd215f0c761e8123280278c839c1211592839a9
+v
+Fflink/src/main/java/com/work/operate/HdfsMultipleTextOutputFormat.java,4/8/487c74b44ea0acd2bcb72d0a9f7e18e973fc1780

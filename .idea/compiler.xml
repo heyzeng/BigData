@@ -11,12 +11,12 @@
         <module name="clickhouse" />
         <module name="spark" />
         <module name="kafka" />
-        <module name="hadoop" />
+        <module name="hive" />
         <module name="azkaban" />
         <module name="sqoop" />
         <module name="zookeeper" />
         <module name="presto" />
-        <module name="hive" />
+        <module name="hadoop" />
       </profile>
     </annotationProcessing>
   </component>

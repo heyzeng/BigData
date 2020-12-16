@@ -9,15 +9,14 @@ import org.apache.flink.api.common.operators.Order;
 import org.apache.flink.api.java.DataSet;
 import org.apache.flink.api.java.ExecutionEnvironment;
 import org.apache.flink.api.java.operators.DataSource;
+import org.apache.flink.api.java.operators.GroupReduceOperator;
 import org.apache.flink.api.java.typeutils.PojoTypeInfo;
+import org.apache.flink.core.fs.FileSystem;
 import org.apache.flink.core.fs.Path;
 import org.apache.flink.formats.parquet.ParquetPojoInputFormat;
 import org.apache.flink.util.Collector;
 import org.apache.parquet.avro.AvroSchemaConverter;
 import org.apache.parquet.schema.MessageType;
-
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -35,8 +34,9 @@ public class readFormatParquet {
 
 
         //file path
-        String topicResourceStreamFile = "hdfs://10.10.20.12:8020/test/000023_0";
+        String topicResourceStreamFile = "hdfs://10.10.20.12:8020/test/device/device";
         String iotDeviceFile = "hdfs://10.10.20.12:8020/test/part-m-00000";
+        String outPut = "hdfs://10.10.20.12:8020/test/iot_device";
 
 
         //read iotDevice
@@ -46,10 +46,23 @@ public class readFormatParquet {
             Record record = new Record();
             record.setDevice_id(strings[0]);
             record.setValue(strings[1]);
-            record.setData_time("1606752000");
+            record.setData_time("1606838400000");
             return record;
         }).returns(Record.class);
-        iotDeviceTo.print();
+//        iotDeviceTo.print();
+
+
+
+//        HadoopOutputFormat<Record, String> hadoopOutputFormat = new HadoopOutputFormat<Record, String>(new HadoopOutputFormat<Record, String>(), new JobConf());
+
+
+//        DataSink<String> stringDataSink = iotDevice.writeAsFormattedText("/Users/judezeng/Desktop/GoodGoodStudy/BigData/flink/src/main/resources/a.txt",
+//                new TextOutputFormat.TextFormatter<String>() {
+//                    @Override
+//                    public String format(String value) {
+//                        return value;
+//                    }
+//                });
 
 
         //read parquet
@@ -65,10 +78,10 @@ public class readFormatParquet {
 
 
         // two stream union
-        topicResourceStream.filter(new FilterFunction<Record>() {
+        GroupReduceOperator<Record, Object> operator = topicResourceStream.filter(new FilterFunction<Record>() {
             @Override
             public boolean filter(Record value) throws Exception {
-               return value.getResource_id().equals("8.0.2045");
+                return value.getResource_id().equals("8.0.2045");
             }
         }).union(iotDeviceTo)
 //                .map(s -> {
@@ -77,7 +90,7 @@ public class readFormatParquet {
 //                    }
 //                    return s;
 //                })
-                .groupBy(s->s.getDevice_id())
+                .groupBy(s -> s.getDevice_id())
                 .sortGroup(s -> s.getData_time(), Order.ASCENDING)
                 .reduceGroup(new GroupReduceFunction<Record, Object>() {
                     @Override
@@ -88,7 +101,7 @@ public class readFormatParquet {
                         Record last = null;
                         HashMap<String, Integer> deviceIDAndOffTime = new HashMap<>();
 
-                        for (Record record : values){
+                        for (Record record : values) {
                             index++;
                             if (index == 1) {
                                 last = record;
@@ -107,16 +120,19 @@ public class readFormatParquet {
 
                         if (index == 1) {
                             if (last.getValue().equals(OFFLINE)) {
-                                offlineTime+=89888;
+                                offlineTime = 24 * 60 * 60 * 1000;
                             }
                         }
                         out.collect(deviceIDAndOffTime);
                     }
                 });
-//                .writeAsText("/Users/judezeng/Downloads/aa.txt");
+        operator.print();
 
-        //执行
-//        env.execute("readFormatParquet");
+
+
+
+//        operator.writeAsText("hdfs://10.10.20.12:8020/test/aa", FileSystem.WriteMode.OVERWRITE);
+
     }
 }
 
