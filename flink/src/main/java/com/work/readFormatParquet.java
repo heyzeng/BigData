@@ -51,20 +51,6 @@ public class readFormatParquet {
         }).returns(Record.class);
 //        iotDeviceTo.print();
 
-
-
-//        HadoopOutputFormat<Record, String> hadoopOutputFormat = new HadoopOutputFormat<Record, String>(new HadoopOutputFormat<Record, String>(), new JobConf());
-
-
-//        DataSink<String> stringDataSink = iotDevice.writeAsFormattedText("/Users/judezeng/Desktop/GoodGoodStudy/BigData/flink/src/main/resources/a.txt",
-//                new TextOutputFormat.TextFormatter<String>() {
-//                    @Override
-//                    public String format(String value) {
-//                        return value;
-//                    }
-//                });
-
-
         //read parquet
         PojoTypeInfo<Record> typeInfo = (PojoTypeInfo<Record>)PojoTypeInfo.of(Record.class);
         Schema schema = ReflectData.get().getSchema(Record.class);
@@ -75,7 +61,6 @@ public class readFormatParquet {
 
         //to dataset
         DataSet<Record> topicResourceStreamTo = topicResourceStream;
-
 
         // two stream union
         GroupReduceOperator<Record, Object> operator = topicResourceStream.filter(new FilterFunction<Record>() {
