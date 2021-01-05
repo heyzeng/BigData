@@ -45,5 +45,7 @@ public class Flink01_WC_Batch {
         //打印
         wordSum.print();
 
+        env.execute("Flink01_WC_Batch");
+
     }
 }
