@@ -29,13 +29,13 @@ public class BatchWordCount {
     }
 
     //自定义类 ,做一个二元组Tuple(word,1)
-    public static class  MyFlatMapFunction implements FlatMapFunction<String, Tuple2<String,Integer>>{
+    public static class MyFlatMapFunction implements FlatMapFunction<String, Tuple2<String, Integer>> {
 
         @Override
         public void flatMap(String value, Collector<Tuple2<String, Integer>> out) throws Exception {
             String[] words = value.split(" ");
             for (String word : words) {
-                out.collect(new Tuple2<>(word,1));
+                out.collect(new Tuple2<>(word, 1));
             }
         }
     }

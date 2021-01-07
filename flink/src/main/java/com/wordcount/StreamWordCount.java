@@ -22,7 +22,7 @@ public class StreamWordCount {
         //DataStream<String> dataStream = env.readTextFile("/Users/judezeng/Desktop/GoodGoodStudy/BigData/flink/src/main/resources/a.txt");
 
         //2 nc 测试流
-       //DataStream<String> dataStream = env.socketTextStream("", 9999);
+        //DataStream<String> dataStream = env.socketTextStream("", 9999);
 
         //3 用parameter tool工具从程序启动参数中提取配置项
         ParameterTool parameterTool = ParameterTool.fromArgs(args);

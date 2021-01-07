@@ -11,7 +11,7 @@ public class OnOfflineDevive {
 
     public static void main(String[] args) {
 
-        String[] results = {"lumi123","111","12345r35"};
+        String[] results = {"lumi123", "111", "12345r35"};
 
         ArrayList<String> resultList = new ArrayList<>();
 
@@ -22,10 +22,9 @@ public class OnOfflineDevive {
         String result = null;
 
 
-        for (String key : results){
+        for (String key : results) {
 
             String[] resValues = key.split(",");
-
 
 
         }

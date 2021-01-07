@@ -17,6 +17,7 @@ import org.apache.flink.formats.parquet.ParquetPojoInputFormat;
 import org.apache.flink.util.Collector;
 import org.apache.parquet.avro.AvroSchemaConverter;
 import org.apache.parquet.schema.MessageType;
+
 import java.util.HashMap;
 
 /**
@@ -28,7 +29,7 @@ public class readFormatParquet {
     public static final String ONLINE = "1";
     public static final String OFFLINE = "0";
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
 
         ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
 
@@ -52,7 +53,7 @@ public class readFormatParquet {
 //        iotDeviceTo.print();
 
         //read parquet
-        PojoTypeInfo<Record> typeInfo = (PojoTypeInfo<Record>)PojoTypeInfo.of(Record.class);
+        PojoTypeInfo<Record> typeInfo = (PojoTypeInfo<Record>) PojoTypeInfo.of(Record.class);
         Schema schema = ReflectData.get().getSchema(Record.class);
         MessageType messageType = new AvroSchemaConverter().convert(schema);
         Path path = new Path(topicResourceStreamFile);
@@ -112,8 +113,6 @@ public class readFormatParquet {
                     }
                 });
         operator.print();
-
-
 
 
 //        operator.writeAsText("hdfs://10.10.20.12:8020/test/aa", FileSystem.WriteMode.OVERWRITE);

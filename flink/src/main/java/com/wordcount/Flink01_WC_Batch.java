@@ -26,21 +26,21 @@ public class Flink01_WC_Batch {
         DataSource<String> dataLine = env.readTextFile("/Users/judezeng/Desktop/GoodGoodStudy/BigData/hadoop/src/main/resources/word");
 
         // 按照word分组
-        FlatMapOperator<String, Tuple2<String,Integer>> wordsAndOne = dataLine.flatMap(new FlatMapFunction<String, Tuple2<String, Integer>>() {
+        FlatMapOperator<String, Tuple2<String, Integer>> wordsAndOne = dataLine.flatMap(new FlatMapFunction<String, Tuple2<String, Integer>>() {
             @Override
             public void flatMap(String value, Collector<Tuple2<String, Integer>> out) throws Exception {
-                String [] words = value.split(" ");
-                for (String word : words){
-                    out.collect(new Tuple2<String,Integer>(word,1));
+                String[] words = value.split(" ");
+                for (String word : words) {
+                    out.collect(new Tuple2<String, Integer>(word, 1));
                 }
             }
         });
 
         // word 分组
-        UnsortedGrouping<Tuple2<String,Integer>> wordGroup = wordsAndOne.groupBy(0);
+        UnsortedGrouping<Tuple2<String, Integer>> wordGroup = wordsAndOne.groupBy(0);
 
         //分组内聚合
-        AggregateOperator<Tuple2<String,Integer>> wordSum = wordGroup.sum(1);
+        AggregateOperator<Tuple2<String, Integer>> wordSum = wordGroup.sum(1);
 
         //打印
         wordSum.print();

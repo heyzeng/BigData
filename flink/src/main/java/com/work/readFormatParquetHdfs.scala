@@ -37,39 +37,36 @@ object readFormatParquetHdfs {
     val user_id = new PrimitiveType(Repetition.OPTIONAL, PrimitiveTypeName.BINARY, "user_id")
     val data_time = new PrimitiveType(Repetition.OPTIONAL, PrimitiveTypeName.BINARY, "data_time")
 
-    val topResourceStreamSchema = new MessageType("t1", device_id, resource_id, value,source,s1,s2,s3,s4,s5,s6,s7,heard_beat,user_id,data_time)
+    val topResourceStreamSchema = new MessageType("t1", device_id, resource_id, value, source, s1, s2, s3, s4, s5, s6, s7, heard_beat, user_id, data_time)
     print(s"topResourceStreamSchema : ${topResourceStreamSchema}")
 
     val t1 = env
       .readFile(new ParquetRowInputFormat(new Path(topicResourceStreamFile), topResourceStreamSchema), topicResourceStreamFile)
-//      .flatMap(new FlatMapFunction[String, BaseBean] {
-//
-//      })
-//      .map(s => f2(s))
+    //      .flatMap(new FlatMapFunction[String, BaseBean] {
+    //
+    //      })
+    //      .map(s => f2(s))
 
     t1.print()
-
-
-
 
 
     /**
      * get file schema
      */
     val t2 = env.readTextFile(iotDeviceFile)
-//    t2.print()
+    //    t2.print()
 
-//   t1.union(t2)
+    //   t1.union(t2)
 
-//    val conf = new Configuration(true)
+    //    val conf = new Configuration(true)
 
     env.execute("readFormatParquet")
   }
 
-//  def f2(x:Row):BaseBean ={
-//    val baseBean: ResourceBean = new ResourceBean();
-//    baseBean.value = x.getField(2).toString.toInt
-//    baseBean.timestamp = x.getField(13).toString.toLong
-//    baseBean
-//  }
+  //  def f2(x:Row):BaseBean ={
+  //    val baseBean: ResourceBean = new ResourceBean();
+  //    baseBean.value = x.getField(2).toString.toInt
+  //    baseBean.timestamp = x.getField(13).toString.toLong
+  //    baseBean
+  //  }
 }
