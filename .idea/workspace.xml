@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17b37d1b-7f48-4dc3-b65c-2cb6ea66ea89" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spark/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/pom.xml" afterDir="false" />
     </list>
@@ -228,7 +227,7 @@
       <workItem from="1609979368257" duration="66000" />
       <workItem from="1609979437776" duration="3394000" />
       <workItem from="1610032809900" duration="1257000" />
-      <workItem from="1610677442204" duration="458000" />
+      <workItem from="1610677442204" duration="678000" />
     </task>
     <servers />
   </component>
