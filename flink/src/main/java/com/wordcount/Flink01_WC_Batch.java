@@ -9,12 +9,6 @@ import org.apache.flink.api.java.operators.UnsortedGrouping;
 import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.util.Collector;
 
-
-/**
- * Author:Jude
- * Date:2020-11-30 上午9:37
- * 批处理
- */
 public class Flink01_WC_Batch {
 
     public static void main(String[] args) throws Exception {

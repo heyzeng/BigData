@@ -8,10 +8,7 @@ import org.apache.flink.api.java.operators.DataSource;
 import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.util.Collector;
 
-/**
- * Author:ZJF
- * Date:2021-01-06 上午9:10
- */
+
 public class BatchWordCount {
 
     public static void main(String[] args) throws Exception {
