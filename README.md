@@ -11,8 +11,11 @@
 - [Hive窗口函数]()
 
 ## Flink
-- [Flink之WordCount]()
+- [Flink之批WordCount](https://github.com/heyzeng/BigData/blob/master/flink/src/main/java/com/wordcount/BatchWordCount.java)
+- [Flink之流WordCount](https://github.com/heyzeng/BigData/blob/master/flink/src/main/java/com/wordcount/StreamWordCount.java)
 
+## Spark
+- [Spark之WordCount]()
 ## Kafka
 
 ## Sqoop

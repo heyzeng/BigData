@@ -2,10 +2,7 @@ package com.wordcount
 
 import org.apache.spark.{SparkConf, SparkContext}
 
-/**
- * Author:Jude
- * Date:2020-12-02 上午11:46
- */
+
 object WordCount {
 
   def main(args: Array[String]): Unit = {
