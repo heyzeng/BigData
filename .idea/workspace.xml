@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17b37d1b-7f48-4dc3-b65c-2cb6ea66ea89" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/spark/src/main/java/com/SparkCore/RDDTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark/src/main/resources/a.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +19,7 @@
       <list>
         <option value="Scala Object" />
         <option value="Class" />
+        <option value="Package Object" />
       </list>
     </option>
   </component>
@@ -66,7 +68,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StreamWordCount">
+  <component name="RunManager" selected="Application.RDDTest">
     <configuration name="BatchWordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wordcount.BatchWordCount" />
       <module name="flink" />
@@ -109,6 +111,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RDDTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.SparkCore.RDDTest" />
+      <module name="spark" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.SparkCore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StreamWordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wordcount.StreamWordCount" />
       <module name="flink" />
@@ -124,14 +140,6 @@
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="readFormatParquet" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.work.readFormatParquet" />
-      <module name="flink" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,18 +165,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Flink01_WC_Batch" />
-      <item itemvalue="Application.readFormatParquet" />
       <item itemvalue="Application.Flink_WC" />
       <item itemvalue="Application.BatchWordCount" />
       <item itemvalue="Application.StreamWordCount" />
+      <item itemvalue="Application.RDDTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RDDTest" />
         <item itemvalue="Application.StreamWordCount" />
         <item itemvalue="Application.BatchWordCount" />
         <item itemvalue="Application.Flink_WC" />
         <item itemvalue="Application.Flink01_WC_Batch" />
-        <item itemvalue="Application.readFormatParquet" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +235,9 @@
       <workItem from="1609979368257" duration="66000" />
       <workItem from="1609979437776" duration="3394000" />
       <workItem from="1610032809900" duration="1257000" />
-      <workItem from="1610677442204" duration="678000" />
+      <workItem from="1610677442204" duration="1034000" />
+      <workItem from="1610681076630" duration="114000" />
+      <workItem from="1616721322880" duration="1232000" />
     </task>
     <servers />
   </component>
@@ -238,6 +248,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="546" y="287" key="#Notifications" timestamp="1610681067214">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="546" y="287" key="#Notifications/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1610681067214" />
     <state x="80" y="0" key="#Project_Structure" timestamp="1606876051112">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
