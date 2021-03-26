@@ -7,12 +7,13 @@ package com.wordcount;
 
 
 import java.io.IOException;
+
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-public class wordCountMapper extends Mapper<LongWritable, Text, Text, IntWritable>{
+public class wordCountMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 
     Text k = new Text();
     IntWritable v = new IntWritable(1);
@@ -27,9 +28,9 @@ public class wordCountMapper extends Mapper<LongWritable, Text, Text, IntWritabl
         String[] words = line.split(" ");
 
         // 3 输出
-        for (String word : words){
+        for (String word : words) {
             k.set(word);
-            context.write(k,v);
+            context.write(k, v);
         }
     }
 }

@@ -10,7 +10,7 @@ import java.io.IOException;
  * Author:Jude
  * Date:2020-09-29 9:37 上午
  */
-public class wordCountReducer extends Reducer<Text, IntWritable,Text,IntWritable> {
+public class wordCountReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
 
     int sum;
     IntWritable v = new IntWritable();
@@ -26,6 +26,6 @@ public class wordCountReducer extends Reducer<Text, IntWritable,Text,IntWritable
 
         // 2 输出
         v.set(sum);
-        context.write(key,v);
+        context.write(key, v);
     }
 }
