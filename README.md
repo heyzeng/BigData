@@ -15,10 +15,7 @@
 - [Flink之流WordCount](https://github.com/heyzeng/BigData/blob/master/flink/src/main/java/com/wordcount/StreamWordCount.java)
 
 ## Spark
-- [Spark之WordCount]()
+- [Spark之WordCount](https://github.com/heyzeng/BigData/blob/master/spark/src/main/java/com/wordcount/WordCount.scala)
 ## Kafka
 
-## Sqoop
-
-## Zookeeper
 
