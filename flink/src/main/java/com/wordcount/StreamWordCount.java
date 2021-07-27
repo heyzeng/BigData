@@ -33,6 +33,7 @@ public class StreamWordCount {
 
         dataResult.print();
 
+        // 执行
         env.execute();
 
     }

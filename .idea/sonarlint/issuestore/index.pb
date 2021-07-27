@@ -42,8 +42,6 @@ g
 7hadoop/src/main/java/com/wordcount/wordCountDriver.java,2/2/2207d75b528767afc7926bb12b98f53835394889
 g
 7hadoop/src/main/java/com/wordcount/wordCountMapper.java,8/b/8bfb2c34e2ab19951baa17b2b5ae31ff75933e34
-g
-7flink/src/main/java/com/wordcount/Flink01_WC_Batch.java,0/f/0f3bf2a77d2dbd0fbe66594a8587670edc027d24
 a
 1spark/src/main/java/com/wordcount/WordCount.scala,0/5/052ac3f60f160a6e6c0de8b358d838167854caf9
 h
@@ -56,9 +54,5 @@ c
 3flink/src/main/java/com/work/readFormatParquet.java,0/f/0fd215f0c761e8123280278c839c1211592839a9
 v
 Fflink/src/main/java/com/work/operate/HdfsMultipleTextOutputFormat.java,4/8/487c74b44ea0acd2bcb72d0a9f7e18e973fc1780
-f
-6flink/src/main/java/com/wordcount/StreamWordCount.java,4/9/49538496394d4faa15de4a5e57d44323dbbd1ad3
-e
-5flink/src/main/java/com/wordcount/BatchWordCount.java,6/9/69d83d2d9ce163c218aabc948e1ee25748ad575f
 _
 /spark/src/main/java/com/SparkCore/RDDTest.scala,3/2/32cb876d4faf72e8c3215554bb29963cff9abf17

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17b37d1b-7f48-4dc3-b65c-2cb6ea66ea89" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/wordcount/BatchWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/wordcount/BatchWordCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/wordcount/StreamWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/wordcount/StreamWordCount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,6 +243,8 @@
       <workItem from="1616761340657" duration="350000" />
       <workItem from="1616762349063" duration="366000" />
       <workItem from="1616762933813" duration="2663000" />
+      <workItem from="1618477817550" duration="185000" />
+      <workItem from="1627114321726" duration="287000" />
     </task>
     <servers />
   </component>
