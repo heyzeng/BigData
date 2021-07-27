@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17b37d1b-7f48-4dc3-b65c-2cb6ea66ea89" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink/src/main/java/com/FlinkAPI/bean/Sensor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink/src/main/java/com/FlinkAPI/source/SourceFromCollection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink/src/main/java/com/FlinkAPI/source/SourceFromFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/wordcount/BatchWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/wordcount/BatchWordCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/wordcount/StreamWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/com/wordcount/StreamWordCount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Scala Object" />
-        <option value="Class" />
         <option value="Package Object" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -63,14 +62,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/hive/src/main/java" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.RDDTest">
+  <component name="RunManager" selected="Application.SourceFromFile">
     <configuration name="BatchWordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wordcount.BatchWordCount" />
       <module name="flink" />
@@ -85,34 +84,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Flink01_WC_Batch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wordcount.Flink01_WC_Batch" />
-      <module name="flink" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.work.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Flink_WC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.work.Flink_WC" />
-      <module name="flink" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.work.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RDDTest" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.SparkCore.RDDTest" />
       <module name="spark" />
@@ -120,6 +91,34 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.SparkCore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SourceFromCollection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.FlinkAPI.source.SourceFromCollection" />
+      <module name="flink" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.FlinkAPI.source.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SourceFromFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.FlinkAPI.source.SourceFromFile" />
+      <module name="flink" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.FlinkAPI.source.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -166,19 +165,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Flink01_WC_Batch" />
-      <item itemvalue="Application.Flink_WC" />
       <item itemvalue="Application.BatchWordCount" />
       <item itemvalue="Application.StreamWordCount" />
       <item itemvalue="Application.RDDTest" />
+      <item itemvalue="Application.SourceFromCollection" />
+      <item itemvalue="Application.SourceFromFile" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SourceFromFile" />
+        <item itemvalue="Application.SourceFromCollection" />
         <item itemvalue="Application.RDDTest" />
         <item itemvalue="Application.StreamWordCount" />
         <item itemvalue="Application.BatchWordCount" />
-        <item itemvalue="Application.Flink_WC" />
-        <item itemvalue="Application.Flink01_WC_Batch" />
       </list>
     </recent_temporary>
   </component>
@@ -244,7 +243,7 @@
       <workItem from="1616762349063" duration="366000" />
       <workItem from="1616762933813" duration="2663000" />
       <workItem from="1618477817550" duration="185000" />
-      <workItem from="1627114321726" duration="287000" />
+      <workItem from="1627114321726" duration="1358000" />
     </task>
     <servers />
   </component>
@@ -258,88 +257,45 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="300" y="141" key="#Illuminated_Cloud" timestamp="1616762622432">
+    <state x="606" y="137" key="#com.intellij.ide.util.MemberChooser" timestamp="1627397886371">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="300" y="141" key="#Illuminated_Cloud/-1080.-500.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1616762622432" />
-    <state x="546" y="287" key="#Notifications" timestamp="1610681067214">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="546" y="287" key="#Notifications/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1610681067214" />
-    <state x="340" y="84" key="#Plugins" timestamp="1616763887034">
+    <state x="606" y="137" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1627397886371" />
+    <state x="517" y="371" width="645" height="320" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1627397850152">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="340" y="84" key="#Plugins/-1080.-500.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1616763887034" />
-    <state x="261" y="29" width="991" height="804" key="#StreamWordCount" timestamp="1610033931027">
+    <state x="517" y="371" width="645" height="320" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1680.1050@0.0.1680.1050" timestamp="1627397850152" />
+    <state width="1624" height="327" key="GridCell.Tab.0.bottom" timestamp="1627398432623">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="224" y="25" width="991" height="804" key="#StreamWordCount/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1609979258844" />
-    <state x="224" y="25" width="991" height="805" key="#StreamWordCount/0.0.1440.900/1440.-995.1080.1895@0.0.1440.900" timestamp="1609978630574" />
-    <state x="261" y="29" key="#StreamWordCount/0.0.1680.1050@0.0.1680.1050" timestamp="1610033931027" />
-    <state x="389" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616761406218">
-      <screen x="0" y="25" width="1680" height="1025" />
-    </state>
-    <state x="389" y="323" key="#com.intellij.fileTypes.FileTypeChooser/-1080.-475.1080.1895/0.25.1680.1025@0.25.1680.1025" timestamp="1616761406218" />
-    <state x="479" y="76" key="#com.intellij.ide.util.MemberChooser" timestamp="1609896230152">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="479" y="76" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1609896230152" />
-    <state x="333" y="244" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1609981742847">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="333" y="244" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1609981742847" />
-    <state width="1624" height="307" key="GridCell.Tab.0.bottom" timestamp="1616727777443">
-      <screen x="0" y="25" width="1680" height="1025" />
-    </state>
-    <state width="1624" height="307" key="GridCell.Tab.0.bottom/-1080.-475.1080.1895/0.25.1680.1025@0.25.1680.1025" timestamp="1616727777443" />
-    <state width="1383" height="264" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1610009220152" />
-    <state width="1624" height="328" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1610185621480" />
-    <state width="1624" height="328" key="GridCell.Tab.0.bottom/0.25.1680.1025@0.25.1680.1025" timestamp="1610031962637" />
-    <state width="1624" height="307" key="GridCell.Tab.0.center" timestamp="1616727777442">
-      <screen x="0" y="25" width="1680" height="1025" />
-    </state>
-    <state width="1624" height="307" key="GridCell.Tab.0.center/-1080.-475.1080.1895/0.25.1680.1025@0.25.1680.1025" timestamp="1616727777442" />
-    <state width="1383" height="264" key="GridCell.Tab.0.center/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1610009220147" />
-    <state width="1624" height="328" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1610185621479" />
-    <state width="1624" height="328" key="GridCell.Tab.0.center/0.25.1680.1025@0.25.1680.1025" timestamp="1610031962637" />
-    <state width="1624" height="307" key="GridCell.Tab.0.left" timestamp="1616727777441">
-      <screen x="0" y="25" width="1680" height="1025" />
-    </state>
-    <state width="1624" height="307" key="GridCell.Tab.0.left/-1080.-475.1080.1895/0.25.1680.1025@0.25.1680.1025" timestamp="1616727777441" />
-    <state width="1383" height="264" key="GridCell.Tab.0.left/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1610009220143" />
-    <state width="1624" height="328" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1610185621478" />
-    <state width="1624" height="328" key="GridCell.Tab.0.left/0.25.1680.1025@0.25.1680.1025" timestamp="1610031962636" />
-    <state width="1624" height="307" key="GridCell.Tab.0.right" timestamp="1616727777442">
-      <screen x="0" y="25" width="1680" height="1025" />
-    </state>
-    <state width="1624" height="307" key="GridCell.Tab.0.right/-1080.-475.1080.1895/0.25.1680.1025@0.25.1680.1025" timestamp="1616727777442" />
-    <state width="1383" height="264" key="GridCell.Tab.0.right/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1610009220151" />
-    <state width="1624" height="328" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1610185621480" />
-    <state width="1624" height="328" key="GridCell.Tab.0.right/0.25.1680.1025@0.25.1680.1025" timestamp="1610031962637" />
-    <state width="1383" height="335" key="GridCell.Tab.1.bottom" timestamp="1609898230986">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1383" height="335" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1609898230986" />
-    <state width="1383" height="335" key="GridCell.Tab.1.center" timestamp="1609898230984">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1383" height="335" key="GridCell.Tab.1.center/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1609898230984" />
-    <state width="1383" height="335" key="GridCell.Tab.1.left" timestamp="1609898230984">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1383" height="335" key="GridCell.Tab.1.left/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1609898230984" />
-    <state width="1383" height="335" key="GridCell.Tab.1.right" timestamp="1609898230985">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1383" height="335" key="GridCell.Tab.1.right/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1609898230985" />
-    <state x="156" y="25" width="1367" height="1025" key="SettingsEditor" timestamp="1616762842223">
+    <state width="1624" height="327" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1627398432623" />
+    <state width="1624" height="327" key="GridCell.Tab.0.center" timestamp="1627398432622">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="156" y="25" width="1367" height="1025" key="SettingsEditor/-1080.-500.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1616762842223" />
-    <state x="134" y="0" width="1171" height="900" key="SettingsEditor/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1609978455758" />
-    <state x="295" y="0" width="850" height="900" key="search.everywhere.popup" timestamp="1610677559720">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1624" height="327" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1627398432622" />
+    <state width="1624" height="327" key="GridCell.Tab.0.left" timestamp="1627398432621">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="295" y="0" width="850" height="900" key="search.everywhere.popup/0.0.1440.900/1440.-1020.1080.1920@0.0.1440.900" timestamp="1610677559720" />
+    <state width="1624" height="327" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1627398432621" />
+    <state width="1624" height="327" key="GridCell.Tab.0.right" timestamp="1627398432623">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1624" height="327" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1627398432623" />
+    <state width="1624" height="348" key="GridCell.Tab.1.bottom" timestamp="1627398048182">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1624" height="348" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1627398048182" />
+    <state width="1624" height="348" key="GridCell.Tab.1.center" timestamp="1627398048181">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1624" height="348" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1627398048181" />
+    <state width="1624" height="348" key="GridCell.Tab.1.left" timestamp="1627398048180">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1624" height="348" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1627398048180" />
+    <state width="1624" height="348" key="GridCell.Tab.1.right" timestamp="1627398048181">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1624" height="348" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1627398048181" />
   </component>
 </project>
