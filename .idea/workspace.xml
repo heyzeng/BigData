@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17b37d1b-7f48-4dc3-b65c-2cb6ea66ea89" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink/FlinkTutorial/input/words.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink/FlinkTutorial/src/main/java/com/learning/chapter02/BatchWordCount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/FlinkTutorial/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flink/FlinkTutorial/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +70,21 @@
       <recent name="$PROJECT_DIR$/hive/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BatchWordCount">
+  <component name="RunManager" selected="Application.BatchWordCount (1)">
+    <configuration name="BatchWordCount (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learning.chapter02.BatchWordCount" />
+      <module name="FlinkTutorial" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learning.chapter02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BatchWordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wordcount.BatchWordCount" />
       <module name="flink" />
@@ -126,20 +141,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamWordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wordcount.StreamWordCount" />
-      <module name="flink" />
-      <option name="PROGRAM_PARAMETERS" value="--host MacBookPro --port 9999" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wordcount.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -166,18 +167,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.BatchWordCount" />
-      <item itemvalue="Application.StreamWordCount" />
       <item itemvalue="Application.RDDTest" />
       <item itemvalue="Application.SourceFromCollection" />
       <item itemvalue="Application.SourceFromFile" />
+      <item itemvalue="Application.BatchWordCount (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BatchWordCount (1)" />
         <item itemvalue="Application.BatchWordCount" />
         <item itemvalue="Application.SourceFromFile" />
         <item itemvalue="Application.SourceFromCollection" />
         <item itemvalue="Application.RDDTest" />
-        <item itemvalue="Application.StreamWordCount" />
       </list>
     </recent_temporary>
   </component>
@@ -245,7 +246,7 @@
       <workItem from="1618477817550" duration="185000" />
       <workItem from="1627114321726" duration="1358000" />
       <workItem from="1679825191316" duration="312000" />
-      <workItem from="1681037584426" duration="2345000" />
+      <workItem from="1681037584426" duration="4238000" />
     </task>
     <servers />
   </component>

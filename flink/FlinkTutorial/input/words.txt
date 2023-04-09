@@ -1,0 +1,8 @@
+hello scala
+java shell
+hello
+a
+b
+c
+cc
+a
