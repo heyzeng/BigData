@@ -2,6 +2,7 @@ package com.work.operate;
 
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.mapred.lib.MultipleTextOutputFormat;
+
 /**
  * Author:ZJF
  * Date:2020-12-10 上午10:00

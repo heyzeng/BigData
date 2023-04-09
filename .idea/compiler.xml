@@ -6,18 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="flink" />
-        <module name="hbase" />
+        <module name="FlinkTutorial" />
         <module name="clickhouse" />
         <module name="spark" />
         <module name="kafka" />
-        <module name="hive" />
-        <module name="azkaban" />
-        <module name="sqoop" />
-        <module name="zookeeper" />
-        <module name="presto" />
         <module name="hadoop" />
+        <module name="FlinkEarly" />
+        <module name="zookeeper" />
+        <module name="hive" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="azkaban" target="1.8" />
+      <module name="hbase" target="1.8" />
+      <module name="presto" target="1.8" />
+      <module name="sqoop" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
