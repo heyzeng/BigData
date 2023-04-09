@@ -16,7 +16,6 @@
         <module>flink</module>
         <module>spark</module>
         <module>clickhouse</module>
-        <module>presto</module>
     </modules>
 
 

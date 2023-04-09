@@ -2,36 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17b37d1b-7f48-4dc3-b65c-2cb6ea66ea89" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/azkaban/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flink/FlinkTutorial/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flink/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/FlinkAPI/bean/Sensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/FlinkTutorial/src/main/java/com/FlinkAPI/bean/Sensor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/FlinkAPI/source/SourceFormKafka.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/FlinkTutorial/src/main/java/com/FlinkAPI/source/SourceFormKafka.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/FlinkAPI/source/SourceFromCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/FlinkTutorial/src/main/java/com/FlinkAPI/source/SourceFromCollection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/FlinkAPI/source/SourceFromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/FlinkTutorial/src/main/java/com/FlinkAPI/source/SourceFromFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/wordcount/BatchWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/FlinkTutorial/src/main/java/com/wordcount/BatchWordCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/wordcount/Flink01_WC_Batch.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/FlinkTutorial/src/main/java/com/wordcount/Flink01_WC_Batch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/wordcount/StreamWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/FlinkTutorial/src/main/java/com/wordcount/StreamWordCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/work/OnOfflineDevive.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/FlinkTutorial/src/main/java/com/work/OnOfflineDevive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/work/bean/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/FlinkTutorial/src/main/java/com/work/bean/Record.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/work/operate/HdfsMultipleTextOutputFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/FlinkTutorial/src/main/java/com/work/operate/HdfsMultipleTextOutputFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/work/readFormatParquet.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/FlinkTutorial/src/main/java/com/work/readFormatParquet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/src/main/java/com/work/readFormatParquetHdfs.scala" beforeDir="false" afterPath="$PROJECT_DIR$/flink/FlinkTutorial/src/main/java/com/work/readFormatParquetHdfs.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/src/main/resources/a.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/src/main/resources/log4j-error.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/src/main/resources/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hadoop/target/classes/some.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flink/FlinkEarly/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hive/target/classes/dd.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presto/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqoop/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqoop/pom.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,11 +61,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/flink/FlinkTutorial/src/main/java" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/hive/src/main/java" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Application.BatchWordCount">
@@ -271,7 +245,7 @@
       <workItem from="1618477817550" duration="185000" />
       <workItem from="1627114321726" duration="1358000" />
       <workItem from="1679825191316" duration="312000" />
-      <workItem from="1681037584426" duration="1240000" />
+      <workItem from="1681037584426" duration="2345000" />
     </task>
     <servers />
   </component>
