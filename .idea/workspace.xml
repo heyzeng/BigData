@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17b37d1b-7f48-4dc3-b65c-2cb6ea66ea89" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/flink/FlinkTutorial/input/words.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink/FlinkTutorial/src/main/java/com/learning/chapter02/BatchWordCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink/FlinkTutorial/src/main/java/com/learning/chapter02/BoundedStreamWordCount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/FlinkTutorial/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flink/FlinkTutorial/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/FlinkTutorial/src/main/java/com/learning/chapter02/BatchWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/FlinkTutorial/src/main/java/com/learning/chapter02/BatchWordCount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +69,7 @@
       <recent name="$PROJECT_DIR$/hive/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BatchWordCount (1)">
+  <component name="RunManager" selected="Application.BoundedStreamWordCount">
     <configuration name="BatchWordCount (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.learning.chapter02.BatchWordCount" />
       <module name="FlinkTutorial" />
@@ -99,13 +98,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RDDTest" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.SparkCore.RDDTest" />
-      <module name="spark" />
+    <configuration name="BoundedStreamWordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learning.chapter02.BoundedStreamWordCount" />
+      <module name="FlinkTutorial" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.SparkCore.*" />
+          <option name="PATTERN" value="com.learning.chapter02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -167,18 +166,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.BatchWordCount" />
-      <item itemvalue="Application.RDDTest" />
       <item itemvalue="Application.SourceFromCollection" />
       <item itemvalue="Application.SourceFromFile" />
       <item itemvalue="Application.BatchWordCount (1)" />
+      <item itemvalue="Application.BoundedStreamWordCount" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BoundedStreamWordCount" />
         <item itemvalue="Application.BatchWordCount (1)" />
         <item itemvalue="Application.BatchWordCount" />
         <item itemvalue="Application.SourceFromFile" />
         <item itemvalue="Application.SourceFromCollection" />
-        <item itemvalue="Application.RDDTest" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +245,7 @@
       <workItem from="1618477817550" duration="185000" />
       <workItem from="1627114321726" duration="1358000" />
       <workItem from="1679825191316" duration="312000" />
-      <workItem from="1681037584426" duration="4238000" />
+      <workItem from="1681037584426" duration="5592000" />
     </task>
     <servers />
   </component>
@@ -260,26 +259,30 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1384" height="302" key="GridCell.Tab.0.bottom" timestamp="1681038706095">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1864" height="376" key="GridCell.Tab.0.bottom" timestamp="1681047719416">
+      <screen x="-92" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1384" height="302" key="GridCell.Tab.0.bottom/-92.-1055.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1681038706095" />
     <state width="1384" height="302" key="GridCell.Tab.0.bottom/-92.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1681037669689" />
-    <state width="1384" height="302" key="GridCell.Tab.0.center" timestamp="1681038706094">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1864" height="376" key="GridCell.Tab.0.bottom/-92.-1080.1920.1080/0.25.1440.875@-92.-1080.1920.1080" timestamp="1681047719416" />
+    <state width="1864" height="376" key="GridCell.Tab.0.center" timestamp="1681047719416">
+      <screen x="-92" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1384" height="302" key="GridCell.Tab.0.center/-92.-1055.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1681038706094" />
     <state width="1384" height="302" key="GridCell.Tab.0.center/-92.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1681037669687" />
-    <state width="1384" height="302" key="GridCell.Tab.0.left" timestamp="1681038706094">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1864" height="376" key="GridCell.Tab.0.center/-92.-1080.1920.1080/0.25.1440.875@-92.-1080.1920.1080" timestamp="1681047719416" />
+    <state width="1864" height="376" key="GridCell.Tab.0.left" timestamp="1681047719415">
+      <screen x="-92" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1384" height="302" key="GridCell.Tab.0.left/-92.-1055.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1681038706094" />
     <state width="1384" height="302" key="GridCell.Tab.0.left/-92.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1681037669686" />
-    <state width="1384" height="302" key="GridCell.Tab.0.right" timestamp="1681038706095">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1864" height="376" key="GridCell.Tab.0.left/-92.-1080.1920.1080/0.25.1440.875@-92.-1080.1920.1080" timestamp="1681047719415" />
+    <state width="1864" height="376" key="GridCell.Tab.0.right" timestamp="1681047719416">
+      <screen x="-92" y="-1080" width="1920" height="1080" />
     </state>
     <state width="1384" height="302" key="GridCell.Tab.0.right/-92.-1055.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1681038706095" />
     <state width="1384" height="302" key="GridCell.Tab.0.right/-92.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1681037669688" />
+    <state width="1864" height="376" key="GridCell.Tab.0.right/-92.-1080.1920.1080/0.25.1440.875@-92.-1080.1920.1080" timestamp="1681047719416" />
     <state x="300" y="32" width="980" height="836" key="new project wizard" timestamp="1681038519138">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

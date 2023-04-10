@@ -14,7 +14,7 @@ import org.apache.flink.util.Collector;
  * Date:2023-04-09 下午9:11
  */
 public class BatchWordCount {
-    public static void main(String[] args)  throws Exception{
+    public static void main(String[] args) throws Exception {
         // 1 创建执行环境
         ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
         // 2 从文件中读取数据
@@ -26,7 +26,7 @@ public class BatchWordCount {
                 out.collect(Tuple2.of(word, 1L));//每个单词后面加1
             }
             //当Lambda表达式使用Java泛型的时候，由于泛型擦除的存在，需要显示的申明类型信息
-        }).returns(Types.TUPLE(Types.STRING,Types.LONG));
+        }).returns(Types.TUPLE(Types.STRING, Types.LONG));
 
         // 4 按照word进行分组
         UnsortedGrouping<Tuple2<String, Long>> tuple2UnsortedGrouping = wordAndOne.groupBy(0);
